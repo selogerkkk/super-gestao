@@ -22,6 +22,7 @@ return new class extends Migration
             //constraint
 
             $table->foreign('produto_id')->references('id')->on('produtos');
+            $table->unique('produto_id');
         });
     }
 
